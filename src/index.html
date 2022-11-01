@@ -6,8 +6,47 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<!--  <script>-->
+<!--    $(document).ready(function(){-->
+<!--      alert("ffffffffffffffffffff");-->
+<!--    });-->
+<!--  </script>-->
+
+
+  <script>
+    $(function() {
+      $('.open-btn').on('click', function () {
+        console.log("*********open*********");
+        $('.sidebar').addClass('active');
+      });
+
+      $('.close-btn').on('click', function () {
+        console.log("*************close*****");
+        $('.sidebar').removeClass('active');
+      });
+
+      $(".sidebar ul li").on('click', function () {
+        console.log("******************");
+        $(".sidebar ul li.active").removeClass('active');
+        $(this).addClass('active');
+      });
+    })
+  </script>
+
+
+
 </head>
 <body>
-  <app-root></app-root>
+
+
+
+
+
+<app-root></app-root>
+
+
 </body>
 </html>

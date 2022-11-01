@@ -18,11 +18,18 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "types": ["jquery","bootstrap","signalr"],
     "lib": [
       "es2020",
       "dom"
     ]
   },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
